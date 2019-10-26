@@ -1,1 +1,41 @@
 // Navigation code here
+
+
+.navigation-bar {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    .navbarColors;
+    align-items: center;
+    flex-direction: column;
+
+/////////////////////Title
+        h1 {
+            width: 100%; 
+            font-size: 4rem;
+            text-align: center;
+//////////////////////// Nav Bar
+}
+            nav {
+                display: flex;
+                justify-content: space-evenly;
+                width: 40%;
+                padding-top: 30px;
+
+                @media @mobile {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    padding: 15px 1%;
+                    margin: 50px;
+                }
+
+            }
+//////////////////////////// Links
+                nav a {
+                    color: @nav-font;
+                    font-size: 1.5rem;
+                    text-decoration: none;
+                    color: @nav-font;
+                }
+            }

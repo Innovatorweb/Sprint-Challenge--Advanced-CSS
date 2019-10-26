@@ -1,9 +1,15 @@
 // Home Content
 
 .home {
-
+  @media @mobile {
+    width: 100%;
+  }
+///////////////////////////// Outerspace IMG
   .intro {
-
+    img {
+      height: 100%;
+      width: 100%;
+    }
     h2 {
       padding: 15px;
     }
@@ -13,6 +19,7 @@
     }
   
   }
+
 
   .space-images {
     display: flex;
@@ -57,9 +64,9 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
+      
     }
+    
 
     .walk-img {
       width: 46%;
@@ -71,5 +78,38 @@
         border-radius: 10px;
       }
     }
+    .btn {
+      .btnStyle;
+    }
+    .btn:hover {
+      background-color: white;
+      color: black;
+  }
+  }
+
+
+  @media @mobile {
+
+    .sky{
+      display: none;
+    }
+
+    .launch {
+      display: none;
+    }
+    
+    .blast {
+      width: 100%;
+      justify-content: center;
+      align-content: center;
+    }
+  
+    .walk  {
+      flex-direction: column-reverse;
+      margin-top: 50px;
+      justify-content: center;
+    }
+  
+      
   }
 }// home

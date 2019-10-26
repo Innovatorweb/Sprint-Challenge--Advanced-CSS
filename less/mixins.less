@@ -1,1 +1,18 @@
 // Mixins Here
+.navbarColors {
+    background-color: @nav-bg;
+    color: @nav-font;
+    border: @nav-border;
+}
+
+.btnStyle {
+    color: white;
+    .btnPara(none; 0px; thin);
+    background: @btn-bg-color ;
+    padding: 5px 5px;
+}
+
+
+.btnPara (@color; @radius; @width) {
+    border: @color @radius @width;
+}

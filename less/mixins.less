@@ -6,13 +6,16 @@
 }
 
 .btnStyle {
-    color: white;
-    .btnPara(none; 0px; thin);
+    color: @wild-sand;
     background: @btn-bg-color ;
-    padding: 5px 5px;
+    padding: 10px 10px 5px;
+    .cust-btn(none, center, 6px, bold, 19px)
 }
 
-
-.btnPara (@color; @radius; @width) {
-    border: @color @radius @width;
+.cust-btn(@border, @align, @radius, @weight, @size){
+	border: @border;
+    text-align: @align;
+    border-radius: @radius;
+    font-weight: @weight;
+    font-size: @size;
 }

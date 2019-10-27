@@ -1,6 +1,3 @@
-// Navigation code here
-
-
 .navigation-bar {
     height: 100px;
     width: 100%;
@@ -8,28 +5,22 @@
     .navbarColors;
     align-items: center;
     flex-direction: column;
-
+    
 /////////////////////Title
         h1 {
             width: 100%; 
             font-size: 4rem;
             text-align: center;
+            flex-direction: column;
+            margin: 10px;
+        }
 //////////////////////// Nav Bar
-}
+
             nav {
                 display: flex;
-                justify-content: space-evenly;
-                width: 40%;
-                padding-top: 30px;
-
-                @media @mobile {
-                    display: flex;
-                    justify-content: space-between;
-                    width: 100%;
-                    padding: 15px 1%;
-                    margin: 50px;
-                }
-
+                justify-content: space-between;          
+                width: 20%;
+                padding-top: 10px;
             }
 //////////////////////////// Links
                 nav a {

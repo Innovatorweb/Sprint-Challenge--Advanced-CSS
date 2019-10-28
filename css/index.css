@@ -281,6 +281,15 @@ footer {
 .home .walk .btn:hover {
   background-color: white;
   color: black;
+  animation: pulse 3s infinite;
+}
+@keyframes pulse {
+  0% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
 }
 @media (max-width: 500px) {
   .navigation-bar nav {
@@ -314,8 +323,8 @@ footer {
     padding: 15px 0 0 15px;
   }
   .home .walk .btn {
-    width: 100%;
+    width: 500px;
     margin: 10px 0;
-    padding: 30px 0;
+    padding: 30px 0px 25px 0;
   }
 }

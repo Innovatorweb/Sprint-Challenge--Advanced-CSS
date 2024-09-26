@@ -1,17 +1,18 @@
 // Home Content
 
 .home {
-
+///////////////////////////// Outerspace IMG
   .intro {
-
+    img {
+      height: 100%;
+      width: 100%;
+    }
     h2 {
       padding: 15px;
     }
-
     p {
       padding:0 15px;
-    }
-  
+    }  
   }
 
   .space-images {
@@ -48,17 +49,12 @@
 
     .walk-text {
       width: 50%;
-
       h3 {
         margin-bottom: 10px;
       }
-
       p {
         margin-bottom: 26px;
-      }
-
-      .btn {
-      }
+      }      
     }
 
     .walk-img {
@@ -71,5 +67,75 @@
         border-radius: 10px;
       }
     }
+    ////////////////////////////////////// Button
+    .btn {
+      .btnStyle;
+    }
+    .btn:hover {
+      background-color: white;
+      color: black;
+      animation: pulse 3s infinite    
+      }
+      @keyframes pulse {
+        0% {
+          background-color: black;
+        }
+        100% {
+          background-color: white;
+        }
+      }
+    }
   }
-}// home
+
+
+
+
+////////////////////////////////Mobile\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+@media @phone {
+  .navigation-bar {
+    nav {
+    display: flex;
+    width:100%;
+    justify-content: space-evenly;
+    }
+  }
+  // Top Image
+  .intro{
+    .outerspace {
+      width: 50%;
+    }
+  }
+
+  .home{
+/////////// Images    
+    .space-images {
+      .sky, .launch {
+        display: none;
+      }
+      .blast {
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+      }
+    }
+    .walk {
+      flex-direction: column-reverse;
+      width: 100%;
+      margin: 0;
+      padding: 20px 0 0;
+      .walk-img {
+        width: 95%;
+      }
+      .walk-text {        
+        width: 100%;
+        padding: 15px 0 0 15px;
+  /////////////////////////////////////////// Button
+        .btn {
+          width: 99%;
+          margin: 10px 0;
+          padding: 30px 0px 25px 0;          
+        }
+      }      
+    } 
+  }
+}

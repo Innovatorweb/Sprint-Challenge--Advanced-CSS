@@ -1,1 +1,21 @@
 // Mixins Here
+.navbarColors {
+    background-color: @nav-bg;
+    color: @nav-font;
+    border: @nav-border;
+}
+
+.btnStyle {
+    color: @wild-sand;
+    background: @btn-bg-color ;
+    padding: 10px 10px 5px;
+    .cust-btn(none, center, 6px, bold, 19px)
+}
+
+.cust-btn(@border, @align, @radius, @weight, @size){
+	border: @border;
+    text-align: @align;
+    border-radius: @radius;
+    font-weight: @weight;
+    font-size: @size;
+}
